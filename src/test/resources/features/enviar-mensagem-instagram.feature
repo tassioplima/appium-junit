@@ -12,5 +12,5 @@ Funcionalidade: 1.0 Realizar um envio de mensagem
     Entao validar se a <mensagem> foi enviada ao <contato>
 
     Exemplos: 
-      | contato          | mensagem             |
-      | "lethiciacancio" | "Teste numero 2 automacao instagram" |
+      | contato   | mensagem       |
+      | "contato" | "teste mensagem" |
