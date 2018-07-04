@@ -10,13 +10,13 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import br.tassio.desafio.qa.interfaces.AccountCredentials;
 import br.tassio.desafio.qa.interfaces.MobileApplication;
 import br.tassio.desafio.qa.interfaces.WebApplication;
+import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
-import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.service.local.AppiumDriverLocalService;
 
 public class BaseTest {
 
-	protected static AndroidDriver<MobileElement> driver;
+	protected static AppiumDriver<MobileElement> driver;
 	protected static AccountCredentials credentials;
 	protected static WebDriver webDriver;
 	protected static WebDriverWait wait;

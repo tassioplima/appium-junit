@@ -1,7 +1,7 @@
-package br.tassio.desafio.qa.mobile.funcionality;
+package br.tassio.desafio.qa.mobile.funcionality.whatsapp;
 
 import br.tassio.desafio.qa.configuration.BaseTest;
-import br.tassio.desafio.qa.mobile.page.RealizarLoginPage;
+import br.tassio.desafio.qa.mobile.page.whatsapp.RealizarLoginPage;
 
 public class RealizarLoginFuncionalidade extends BaseTest{
 	

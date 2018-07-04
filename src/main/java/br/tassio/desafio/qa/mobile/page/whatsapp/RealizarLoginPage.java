@@ -1,10 +1,10 @@
-package br.tassio.desafio.qa.mobile.page;
+package br.tassio.desafio.qa.mobile.page.whatsapp;
 
 import org.openqa.selenium.support.PageFactory;
 
 import br.tassio.desafio.qa.configuration.BaseTest;
+import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
-import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 
@@ -43,7 +43,7 @@ public class RealizarLoginPage extends BaseTest {
 	@AndroidFindBy(id = "com.whatsapp:id/registration_name")
 	private MobileElement profileName;
 
-	public RealizarLoginPage(AndroidDriver<MobileElement> driver) {
+	public RealizarLoginPage(AppiumDriver<MobileElement> driver) {
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
 	}
 

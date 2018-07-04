@@ -8,17 +8,24 @@ import cucumber.api.java.Before;
 public class Hooks extends BaseTest {
 
 
-	@Before(value="@mobile")
-	public void beforeScenarioMobile() {
+	@Before(value="@whatsApp")
+	public void beforeScenarioMobileWhatsApp() {
 		startAppium();
-		System.out.println("Teste execuÁ„o Hooks Mobile");
+		System.out.println("Teste execu√ß√£o Hooks Mobile");
 		initializeMobileApplication(App.WHATSAPP);
 		//setUserApplication(Credentials.TELEFONE);
+	}
+	
+	@Before(value="@instagram")
+	public void beforeScenarioMobileInstagram() {
+		startAppium();
+		System.out.println("Teste execu√ß√£o Hooks Mobile");
+		initializeMobileApplication(App.INSTAGRAM);
 	}
 
 	@Before(value = "@web")
 	public void beforeScenarioWeb() {
-		System.out.println("Teste execuÁ„o Hooks Web");
+		System.out.println("Teste execu√ß√£o Hooks Web");
 		initializeWebApplication(Web.CHROME);
 		//setUserApplication(Credentials.TELEFONE);
 

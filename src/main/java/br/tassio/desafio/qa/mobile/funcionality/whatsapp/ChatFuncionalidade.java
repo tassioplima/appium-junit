@@ -1,7 +1,7 @@
-package br.tassio.desafio.qa.mobile.funcionality;
+package br.tassio.desafio.qa.mobile.funcionality.whatsapp;
 
 import br.tassio.desafio.qa.configuration.BaseTest;
-import br.tassio.desafio.qa.mobile.page.ChatPage;
+import br.tassio.desafio.qa.mobile.page.whatsapp.ChatPage;
 
 public class ChatFuncionalidade extends BaseTest {
 	

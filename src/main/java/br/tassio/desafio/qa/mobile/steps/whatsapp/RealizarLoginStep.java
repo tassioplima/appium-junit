@@ -1,9 +1,9 @@
-package br.tassio.desafio.qa.mobile.steps;
+package br.tassio.desafio.qa.mobile.steps.whatsapp;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import br.tassio.desafio.qa.mobile.funcionality.ChatFuncionalidade;
-import br.tassio.desafio.qa.mobile.funcionality.RealizarLoginFuncionalidade;
+import br.tassio.desafio.qa.mobile.funcionality.whatsapp.ChatFuncionalidade;
+import br.tassio.desafio.qa.mobile.funcionality.whatsapp.RealizarLoginFuncionalidade;
 import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.Entao;
 import cucumber.api.java.pt.Quando;

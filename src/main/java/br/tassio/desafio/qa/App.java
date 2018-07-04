@@ -7,26 +7,34 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import br.tassio.desafio.qa.interfaces.MobileApplication;
+import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
-import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobilePlatform;
 
 public enum App implements MobileApplication {
 
 	WHATSAPP {
 		@Override
-		public AndroidDriver<MobileElement> getDriver() {
-			return getDriver("com.whatsapp");
+		public AppiumDriver<MobileElement> getDriver() {
+			return getDriver("com.whatsapp", "com.whatsapp.HomeActivity");
 		}
 
+	},
+	INSTAGRAM{
+
+		@Override
+		public AppiumDriver<MobileElement> getDriver() {
+			return getDriver("com.instagram.android", "com.instagram.mainactivity.MainActivity");
+		}
+		
 	};
 
-	private AndroidDriver<MobileElement> driver;
+	private AppiumDriver<MobileElement> driver;
 
-	public AndroidDriver<MobileElement> getDriver(String appPackage) {
+	public AppiumDriver<MobileElement> getDriver(String appPackage, String appActivity) {
 
 		try {
-			driver = new AndroidDriver<MobileElement>(getCapabilities(appPackage));
+			driver = new AppiumDriver<MobileElement>(getCapabilities(appPackage,appActivity));
 			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -34,7 +42,7 @@ public enum App implements MobileApplication {
 		return driver;
 	}
 
-	private DesiredCapabilities getCapabilities(String appPackage) throws IOException {
+	private DesiredCapabilities getCapabilities(String appPackage, String appActivity) throws IOException {
 
 		Scanner scanner = null;
 		scanner = new Scanner(
@@ -48,7 +56,7 @@ public enum App implements MobileApplication {
 		capabilities.setCapability("device", "Android");
 		capabilities.setCapability("udid", deviceSerialNumver);
 		capabilities.setCapability("appPackage", appPackage);
-		capabilities.setCapability("appActivity", "HomeActivity");
+		capabilities.setCapability("appActivity", appActivity);
 		capabilities.setCapability("autoGrantPermissions", "true");
 
 		return capabilities;
