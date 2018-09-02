@@ -57,6 +57,7 @@ public enum App implements MobileApplication {
 		capabilities.setCapability("udid", deviceSerialNumver);
 		capabilities.setCapability("appPackage", appPackage);
 		capabilities.setCapability("appActivity", appActivity);
+		capabilities.setCapability("noReset", "true");
 		capabilities.setCapability("autoGrantPermissions", "true");
 
 		return capabilities;

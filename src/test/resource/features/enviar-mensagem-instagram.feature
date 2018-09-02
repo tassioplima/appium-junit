@@ -4,7 +4,7 @@
 #Encoding: UTF-8
 Funcionalidade: 1.0 Realizar um envio de mensagem
 	
-	Contexto: Realizar login
+  Contexto: Realizar login
   Dado que eu confirme autorizacao do facebook e aceite os termos
 	
   @instagram @CTINSTA001

@@ -1,4 +1,4 @@
-package br.tassio.desafio.qa.mobile.steps.intagram;
+package br.tassio.desafio.qa.mobile.steps;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
