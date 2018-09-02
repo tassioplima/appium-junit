@@ -20,6 +20,7 @@ public class HomeInstagramFuncionalidade extends BaseTest{
 	public void selecionaInboxMensagem() {
 		
 		this.home.getInboxIcon().click();
+
 		
 	}
 

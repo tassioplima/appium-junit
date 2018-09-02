@@ -37,6 +37,7 @@ public class DirectPage {
 	
 	@AndroidFindBy (xpath = "//android.widget.TextView[starts-with(@text,'Today')]/following::android.widget.TextView[1]")
 	private MobileElement recentMessage;
+	
 
 	public DirectPage(AppiumDriver<MobileElement> driver) {
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
