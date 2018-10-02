@@ -17,4 +17,4 @@ Funcionalidade: 1.0 Realizar um envio de mensagem
 
     Exemplos: 
       | contato    | mensagem                   |
-      | "taciiito" | "teste mensagem automacao" |
+      | "xxx" | "teste mensagem automacao" |
